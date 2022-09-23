@@ -141,6 +141,15 @@ $(document).ready(function ($) {
 
     $('#addSchedule').on('click', function() {
         const url = `${baseUrl}order/addSchedule`;
+        
+        if ($('#startDate').val() == '' || $('#endDate').val() == '') {
+            $('#alert-danger').css('display', 'block');
+            $('#alert-danger').text('Start and End Date is required.');
+
+            setTimeout(() => {
+                $('#alert-danger').css('display', 'none');
+            },3000);
+        }
 
         data = {
             startDate : $('#startDate').val(),

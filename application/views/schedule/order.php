@@ -59,11 +59,11 @@
                         </div>
                         <input type="hidden" id="scheduleId">
                         <div class="form-group mb-0" id="bootstrap-datepicker">
-                            <label for="startDateLabel" class="form-label">Date Start</label>
+                            <label for="startDateLabel" class="form-label">Date Start<span class="text-danger">*</span></label>
                             <input class="form-control" type="text" data-provide="datepicker" id="startDate" name="StartDate" value="" required>
                         </div>
                         <div class="form-group mb-0 mt-2" id="bootstrap-datepicker">
-                            <label for="endDateLabel" class="form-label">Date End</label>
+                            <label for="endDateLabel" class="form-label">Date End<span class="text-danger">*</span></label>
                             <input class="form-control" type="text" data-provide="datepicker" id="endDate" name="endDate" value="" required>
                         </div>
                 </div>
